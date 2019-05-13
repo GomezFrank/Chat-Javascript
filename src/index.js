@@ -13,7 +13,7 @@ app.set('port', process.env.PORT || 3000)
 require('./sockets')(io);
 
 //db coneccion
-mongoose.connect('mongodb://localhost/chat-database',{
+mongoose.connect('mongodb://gomezfrank:gomezfrank@cluster0-fewm9.mongodb.net/test?retryWrites=true',{
     useNewUrlParser:true
 })
     .then(db => console.log('Esta conectada la bd'))
